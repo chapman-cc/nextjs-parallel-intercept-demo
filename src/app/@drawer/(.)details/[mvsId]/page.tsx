@@ -1,7 +1,5 @@
 import {
-  Drawer,
   DrawerClose,
-  DrawerContent,
   DrawerDescription,
   DrawerFooter,
   DrawerHeader,
@@ -17,18 +15,16 @@ export default async function page({
   const { mvsId } = await params;
 
   return (
-    <Drawer open>
-      <DrawerContent>
-        <DrawerHeader>
-          <DrawerTitle>You are reading mvs by id in url</DrawerTitle>
-          <DrawerDescription>Id: {mvsId}</DrawerDescription>
-        </DrawerHeader>
-        <DrawerFooter>
-          <DrawerClose>
-            <RouterBackButton>Close drawer</RouterBackButton>
-          </DrawerClose>
-        </DrawerFooter>
-      </DrawerContent>
-    </Drawer>
+    <>
+      <DrawerHeader>
+        <DrawerTitle>You are reading mvs by id in url</DrawerTitle>
+        <DrawerDescription>Id: {mvsId}</DrawerDescription>
+      </DrawerHeader>
+      <DrawerFooter>
+        <DrawerClose asChild>
+          <RouterBackButton>Close drawer</RouterBackButton>
+        </DrawerClose>
+      </DrawerFooter>
+    </>
   );
 }
