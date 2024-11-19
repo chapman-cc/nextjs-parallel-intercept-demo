@@ -6,5 +6,5 @@ export default async function page({
   params: Promise<{ mvsId: string }>;
 }) {
   const { mvsId } = await params;
-  return <div>stand alone details page, mvsId: {mvsId}</div>;
+  return <div>stand alone edit page, mvsId: {mvsId}</div>;
 }

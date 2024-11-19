@@ -19,7 +19,7 @@ export default async function page({
   return (
     <>
       <DrawerHeader>
-        <DrawerTitle>You are reading mvs by id in url</DrawerTitle>
+        <DrawerTitle>You are editing mvs by id in url</DrawerTitle>
         <DrawerDescription>Id: {mvsId}</DrawerDescription>
       </DrawerHeader>
       <DrawerFooter>
@@ -28,8 +28,8 @@ export default async function page({
             <RouterBackButton>
               <Button>Close drawer</Button>
             </RouterBackButton>
-            <Link href={`/edit/${mvsId}`}>
-              <Button>Go to edit</Button>
+            <Link href={`/details/${mvsId}`}>
+              <Button>Go to details</Button>
             </Link>
           </div>
         </DrawerClose>

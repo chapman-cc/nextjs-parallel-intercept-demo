@@ -55,9 +55,16 @@ export default async function Home({ searchParams }: Props) {
         </li>
       </ol>
 
-      <Link href="/details/abcdefg">
-        <Button>Open drawer with url &quot;/details/abcdefg&quot;</Button>
-      </Link>
+      <div className="mb-5">
+        <Link href="/details/abcdefg">
+          <Button>Open drawer with url &quot;/details/abcdefg&quot;</Button>
+        </Link>
+      </div>
+      <div>
+        <Link href="/edit/abcdefg">
+          <Button>Open drawer with url &quot;/edit/abcdefg&quot;</Button>
+        </Link>
+      </div>
 
       <p className="mt-5">
         Repo:{" "}
