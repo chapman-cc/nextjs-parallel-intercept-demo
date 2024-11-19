@@ -1,13 +1,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
-interface Props {
-  searchParams: Promise<{
-    mvsId?: string;
-  }>;
-}
-
-export default async function Home({ searchParams }: Props) {
+export default async function Home() {
   return (
     <div>
       <h1 className="text-2xl">
@@ -54,7 +48,12 @@ export default async function Home({ searchParams }: Props) {
           </p>
         </li>
 
-        <li><p>changing between modal/drawer can use <code>&lt;Link href="..." replaced&gt;</code></p></li>
+        <li>
+          <p>
+            changing between modal/drawer can use{" "}
+            <code>&lt;Link href="..." replaced&gt;</code>
+          </p>
+        </li>
       </ol>
 
       <div className="mb-5">
