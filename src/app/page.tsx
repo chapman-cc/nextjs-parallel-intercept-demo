@@ -53,6 +53,8 @@ export default async function Home({ searchParams }: Props) {
             underneath is 404
           </p>
         </li>
+
+        <li><p>changing between modal/drawer can use <code>&lt;Link href="..." replaced&gt;</code></p></li>
       </ol>
 
       <div className="mb-5">
