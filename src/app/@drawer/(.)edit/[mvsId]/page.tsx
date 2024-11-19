@@ -28,7 +28,7 @@ export default async function page({
             <RouterBackButton>
               <Button>Close drawer</Button>
             </RouterBackButton>
-            <Link href={`/details/${mvsId}`}>
+            <Link href={`/details/${mvsId}`} replace>
               <Button>Go to details</Button>
             </Link>
           </div>
