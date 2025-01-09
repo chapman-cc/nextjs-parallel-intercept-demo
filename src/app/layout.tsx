@@ -28,10 +28,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-700`}
       >
-        {children}
-        {drawer}
+        <div className="m-10 relative bg-white">
+          {children}
+
+          {drawer}
+        </div>
       </body>
     </html>
   );
