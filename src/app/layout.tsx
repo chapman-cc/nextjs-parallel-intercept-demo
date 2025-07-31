@@ -30,9 +30,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-700`}
       >
-        <div className="m-10 relative bg-white">
+        <div className="m-10 relative bg-white overflow-hidden">
           {children}
-
           {drawer}
         </div>
       </body>
